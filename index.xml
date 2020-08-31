@@ -17,7 +17,8 @@
       <pubDate>Thu, 27 Aug 2020 14:28:49 +0900</pubDate>
       
       <guid>https://yunsoul.github.io/posts/my-first-post/</guid>
-      <description>bla bla bla !!! end</description>
+      <description>bla bla bla !!! end
+int add (int a, b) { int a; int b; int c = a + b; return c; } </description>
     </item>
     
   </channel>
