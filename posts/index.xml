@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Yunsoul&#39;s Dragon Space</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2020 14:28:49 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 18:03:36 +0900</lastBuildDate>
     
 	<atom:link href="https://yunsoul.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://yunsoul.github.io/posts/hugo/</link>
+      <pubDate>Mon, 31 Aug 2020 18:03:36 +0900</pubDate>
+      
+      <guid>https://yunsoul.github.io/posts/hugo/</guid>
+      <description>https://gohugo.io  install  https://gohugo.io/getting-started/quick-start/ https://gohugo.io/getting-started/installing/  Setup create a new site hugo new site blog  site의 내용을 구성할 blog 폴더가 생성됨  add a theme  https://themes.gohugo.io  cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke // themes/ananke 폴더의 remote origin이 https://github.com/budparr/gohugo-theme-ananke.git이 됨  ananke theme를 적용(submodule로 적용)  echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml  themes 폴더에 적용할 theme를 clone하지 않고 submodule로 적용하는 이유  submodule로 적용하면 업데이트된 theme의 내용을 쉽게 가져올 수 있다.</description>
+    </item>
     
     <item>
       <title>My First Post</title>
