@@ -36,7 +36,7 @@
 <meta itemprop="description" content="https://gohugo.io  install  https://gohugo.io/getting-started/quick-start/ https://gohugo.io/getting-started/installing/  Setup create a new site hugo new site blog  site의 내용을 구성할 blog 폴더가 생성됨  add a theme  https://themes.gohugo.io  cd blog git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke // themes/ananke 폴더의 remote origin이 https://github.com/budparr/gohugo-theme-ananke.git이 됨  ananke theme를 적용(submodule로 적용)  echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml  themes 폴더에 적용할 theme를 clone하지 않고 submodule로 적용하는 이유  submodule로 적용하면 업데이트된 theme의 내용을 쉽게 가져올 수 있다.">
 <meta itemprop="datePublished" content="2020-08-31T18:03:36+09:00" />
 <meta itemprop="dateModified" content="2020-08-31T18:03:36+09:00" />
-<meta itemprop="wordCount" content="389">
+<meta itemprop="wordCount" content="480">
 
 
 
@@ -148,8 +148,8 @@
 
       
       
-        <span class="f6 mv4 dib tracked"> - 2 minutes read</span>
-        <span class="f6 mv4 dib tracked"> - 389 words</span>
+        <span class="f6 mv4 dib tracked"> - 3 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 480 words</span>
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul>
@@ -244,7 +244,39 @@
   <span style="color:#a6e22e">featured_image</span> = <span style="color:#e6db74">&#34;/images/gohugo-default-sample-hero-image.jpg&#34;</span>
   <span style="color:#a6e22e">recent_posts_number</span> = <span style="color:#ae81ff">5</span>
   <span style="color:#a6e22e">commentEnable</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><h2 id="github-연동">Github 연동</h2>
+</code></pre></div><ul>
+<li>site log (좌측 상단 로고)
+<ul>
+<li>로고 이미지를 blog/static 폴더에 위치시켜야함</li>
+<li>config.toml에 이미지 경로 설정</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">site_logo</span> = <span style="color:#e6db74">&#34;img/logo.svg&#34;</span>
+</code></pre></div><h3 id="article-edit-with-ananke-theme">article edit with Ananke Theme</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">---</span>
+<span style="color:#a6e22e">date</span>: <span style="color:#ae81ff">2017</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span><span style="color:#f92672">-</span><span style="color:#ae81ff">09</span><span style="color:#a6e22e">T10</span>:<span style="color:#ae81ff">58</span>:<span style="color:#ae81ff">08</span><span style="color:#f92672">-</span><span style="color:#ae81ff">04</span>:<span style="color:#ae81ff">00</span>
+<span style="color:#a6e22e">description</span>: <span style="color:#e6db74">&#34;The Grand Hall&#34;</span>
+<span style="color:#a6e22e">featured_image</span>: <span style="color:#e6db74">&#34;/images/Pope-Edouard-de-Beaumont-1844.jpg&#34;</span>
+<span style="color:#a6e22e">tags</span>: [<span style="color:#e6db74">&#34;scene&#34;</span>]
+<span style="color:#a6e22e">title</span>: <span style="color:#e6db74">&#34;Chapter I: The Grand Hall&#34;</span>
+<span style="color:#f92672">---</span>
+</code></pre></div><ul>
+<li>description : title 아래에 표시되는 설명문</li>
+<li>featured_image : 해당 post를 대표하는 이미지 (없으면, featured_image: &ldquo;&quot;)</li>
+<li>tags: post된 글들 중에서 동일한 tag를 갖는 것들만 모아서 볼 수 있다.
+<ul>
+<li>여러 개를 선언할 수 있다. (없으면, tags: [])</li>
+<li>동일한 tag를 가지고 있는 post가 있으면 글 오른쪽에 &ldquo;Related&rdquo; 박스가 보임</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e"></span>
+</code></pre></div><ul>
+<li>글 본문에 이미지 넣기</li>
+</ul>
+<h2 id="github-연동">Github 연동</h2>
 <ul>
 <li>
 <p>github.com에 두 개의 repository 생성</p>
